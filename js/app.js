@@ -1,9 +1,9 @@
 
 console.log('class 04');
 
-var productKind= prompt(" what do you want foundation , powder , lipsteck : ");
+//var productKind= prompt(" what do you want foundation , powder , lipsteck : ");
 var productName = prompt(" what is the product name ");
-var numOfpiece = prompt("what is the number of piece");
+//var numOfpiece = prompt("what is the number of piece");
 var degree=  prompt(" what is the degree of the product "); 
 var isExisting =prompt(" it is the product  existing ");
 
@@ -53,11 +53,16 @@ if (isExisting == true) {
 }
 
 
+function getProductAndNuberOfPiece() { 
+    
+    
+var productKind= prompt(" what do you want foundation , powder , lipsteck : ");
+var numOfpiece = prompt("what is the number of piece");
 while(productKind !=="foundation" && productKind !=="powder" && productKind !== "lipsteck")
-{
+   {
     productKind= prompt(" what do you want foundation , powder , lipsteck : ");
 
-}
+   }
 
 var itemOrder ='';
 if (productKind == "foundation")
@@ -81,6 +86,12 @@ for ( var i= 0; i < numOfpiece ; i++) {
     
 }
 document.write(result);
+
+
+}
+
+getProductAndNuberOfPiece();
+
 
 
 
