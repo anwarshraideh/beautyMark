@@ -32,6 +32,7 @@ document.write("<h1>the product not existing</h1>");
   
     console.log('this degree is available ');
     document.write("<h3>this degree is available</h3>");
+    alert("this degree is available");
 
  }
  else
@@ -39,6 +40,7 @@ document.write("<h1>the product not existing</h1>");
 
     console.log('this degree is sold out ');
     document.write("<h4>this degree is sold out </h4>");
+    alert("this degree is sold out");
 
  }
 
